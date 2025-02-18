@@ -4,7 +4,7 @@ const job = CronJob.from({
     cronTime: '*/13 * * * *', 
     onTick: function () {
         
-        const apiUrl = '/';
+        const apiUrl = 'https://web-scrapper-qbsa.onrender.com/keep-alive';
 
         // Get the current time in the specified time zone
         const now = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
