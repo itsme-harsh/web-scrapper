@@ -7,6 +7,7 @@ import archiver from 'archiver';
 import { URL } from 'url';
 import { google } from 'googleapis';
 import dotenv from 'dotenv';
+import keepAlive from "./keepAlive.js";
 
 dotenv.config();
 
