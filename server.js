@@ -73,6 +73,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get("/keep-alive", async (req, res) => {
+    res.json({ success: "true" });
+});
+
 app.post('/download', async (req, res) => {
     const { url } = req.body;
     if (!url) return res.render('Error', { message: "Invalid URL!", string: 'Oops! Something went wrong while downloading the website. Please check the URL and try again.' });
